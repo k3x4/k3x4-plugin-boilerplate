@@ -20,6 +20,9 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+define( 'PLUGIN_NAME_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'PLUGIN_NAME_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+
 // We load Composer's autoload file
 require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 
